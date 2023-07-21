@@ -46,13 +46,58 @@
   filter: grayscale(1)
 }
 
-.ex-7-img:hover {
+.ex-7-img {
   transition: all 2s;
 }
 
 .ex-7-img:hover {
-  filter: sepia(0.6);
-  opacity: (0.7);
+  filter: grayscale(0.6) sepia(0.5);
 }
+
+.ex-8-img {
+  transition: all 2s;
+}
+
+.ex-8-img:hover {
+  filter: grayscale(0.6) sepia(0.6);
+  border-radius: 20px;
+}
+
+.ex-9-img {
+  transition: all 2s;
+}
+
+.ex-9-img:hover {
+  filter: grayscale(0.6) sepia(0.5);
+  border-radius: 20px;
+  scale: 1.5;
+}
+
+.ex-10-icon {
+  animation: rot-reverse 1s linear infinite;
+  animation-direction: reverse;
+}
+
+@keyframes rot-reverse {
+  100% {
+    transform: rotate(360deg);
+  }
+}
+
+.ex-11-icon:hover {
+  animation: rotation 2s linear;
+}
+
+@keyframes rotation {
+  90% {
+    transform: rotate(320deg);
+  }
+}
+
+
+
+
+
+
 
 
